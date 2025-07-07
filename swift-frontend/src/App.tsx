@@ -1,9 +1,17 @@
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Profile from "./pages/Profile/Profile";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <p className="text-red-500 ">Hi</p>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </>
   );
 }
