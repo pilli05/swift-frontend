@@ -29,7 +29,7 @@ const Profile = () => {
             <span className="text-gray-600 text-sm">{userDetails?.email}</span>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 !mt-7">
           <div>
             <label
               className="text-gray-600 text-sm font-semibold"
@@ -43,7 +43,7 @@ const Profile = () => {
               readOnly
               value={userDetails?.id}
               id="userId"
-              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2"
+              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2 w-full"
             />
           </div>
           <div>
@@ -59,7 +59,7 @@ const Profile = () => {
               readOnly
               value={userDetails?.name}
               id="name"
-              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2"
+              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2 w-full"
             />
           </div>
           <div>
@@ -75,7 +75,7 @@ const Profile = () => {
               readOnly
               value={userDetails?.email}
               id="email"
-              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2"
+              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2 w-full"
             />
           </div>
           <div>
@@ -97,7 +97,7 @@ const Profile = () => {
                 userDetails?.address?.city
               }
               id="address"
-              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2"
+              className="!px-2 !py-1 outline-none bg-slate-50 rounded-md !mt-2 w-full"
             />
           </div>
           <div>
